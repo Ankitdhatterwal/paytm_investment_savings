@@ -1,0 +1,60 @@
+Feature details
+Overview():-> User can create Dmate account at Paytm app itself and can trade through wallet through upi. 
+2. user can manage their saving through investment without very hifi knowledge through regular payment app. 
+
+
+
+
+
+ 
+ 1. New User can be created through admin panel  -Http://localhost:8000/admin
+ 2. ALl products can be retrived by the url -Http://localhost:8000/api/products/
+ 3. Demate Account for trading can we careated through  - http://localhost:8000/api/dmate-accounts/create/
+ 4. All Public ipo companies can be retirved for open  trading using - Http://localhost:8000/api/companies
+ 5. Transactions can be tracked and created  by the api - Http://localhost:8000/api/transactions/create/
+
+created but not commited(testing)
+ ----Addind new features till 12pm--------------- 
+
+
+How to Access project 
+ 
+ Step 1 -  import project 
+ step 2 -   cd into project directory
+ step 3 - database configrations 
+  
+To install MySQL and configure your Django project to use it, follow these steps:
+
+Step 1: Install MySQL Server
+Install MySQL Server by downloading the installer from the official MySQL website: MySQL Downloads.
+
+Follow the installation instructions provided for your operating system.
+
+Step 2: Install MySQL Client for Python
+Install the MySQL client library for Python using pip:
+
+                                                 pip install mysqlclit
+
+                                                 step - 3: create database MySql 
+
+                                                 step 4- moditfy database configration according to yours 
+   DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'your_database_name',
+        'USER': 'your_mysql_username',
+        'PASSWORD': 'your_mysql_password',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
+}
+
+done 
+
+
+ step 3- commands  to run  - 1 python manage.py makemigrations
+                            2.python manage.py migrate
+                            3.python manage.py runserver
+
+
+
